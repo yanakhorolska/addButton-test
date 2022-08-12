@@ -21,7 +21,7 @@ const addButton = document.querySelector('.js-add-button');
 
 addButton.addEventListener('click', addFunction);
 
-let labelCounter = 4;
+let labelCounter = 1;
 
 function addFunction(evt) {
     const btn = document.createElement('button');
