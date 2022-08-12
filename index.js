@@ -12,9 +12,15 @@ function onClick(evt) {
     console.log(evt.currentTarget);
 }
 
+
+// Код добавления кнопок
+
+
+
 const addButton = document.querySelector('.js-add-button');
 
 addButton.addEventListener('click', addFunction);
+
 let labelCounter = 4;
 
 function addFunction(evt) {
