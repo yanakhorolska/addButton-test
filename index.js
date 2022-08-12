@@ -21,6 +21,8 @@ const addButton = document.querySelector('.js-add-button');
 
 addButton.addEventListener('click', addFunction);
 
+// Счётчик номера кнопки
+
 let labelCounter = 1;
 
 function addFunction(evt) {
@@ -28,7 +30,7 @@ function addFunction(evt) {
     btn.textContent = `Button ${labelCounter}`;
     btn.type = 'button';
     btn.classList.add('btn');
-
+// Добавляем элемент в контейнер
     container.appendChild(btn);
     labelCounter += 1;
 
