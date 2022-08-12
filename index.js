@@ -1,3 +1,29 @@
-﻿const container = document.querySelector('.container');
+﻿// Делегирование событий
+// Общий слушатель
+// фильтр цели клика
 
-container.addEventListener('click')
+
+const container = document.querySelector('.container');
+
+container.addEventListener('click', onClick);
+
+function onClick(evt) {
+    console.log(evt.target);
+    console.log(evt.currentTarget);
+}
+
+const addButton = document.querySelector('.js-add-button');
+
+addButton.addEventListener('click', addFunction);
+let labelCounter = 4;
+
+function addFunction(evt) {
+    const btn = document.createElement('button');
+    btn.textContent = `Button ${labelCounter}`;
+    btn.type = 'button';
+    btn.classList.add('btn');
+
+    container.appendChild(btn);
+    labelCounter += 1;
+
+}
