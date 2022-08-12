@@ -33,5 +33,5 @@
     color: white;
     background-color: rosybrown;
     cursor: pointer;
-    width: calc(100% / 8 - 5px);
+    width: calc(100% / 8 - 10px);
 }
